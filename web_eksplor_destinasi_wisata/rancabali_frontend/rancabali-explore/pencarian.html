@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cari Destinasi | Rancabali Explore</title>
+  <meta name="description" content="Cari dan saring destinasi wisata Rancabali berdasarkan kategori.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="pencarian" data-nav="destinasi">
+  <a class="skip" href="#main">Lewati ke konten utama</a>
+  <header class="site-header" id="site-header"></header>
+  <main id="main">
+    <div class="container page">
+      <a class="back" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg><span>Cari Destinasi</span></a>
+
+      <form class="searchbar searchbar--flat" id="cari-form" role="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <label class="sr-only" for="cari-input">Cari destinasi</label>
+        <input id="cari-input" type="search" placeholder="Cari tujuan liburanmu..." autocomplete="off">
+        <button class="btn btn--primary" type="submit">Cari</button>
+      </form>
+
+      <div class="filter">
+        <h2 id="kategori-label">Kategori</h2>
+        <div class="chips" id="chips" role="group" aria-labelledby="kategori-label"></div>
+      </div>
+
+      <div class="results-head">
+        <h2>Hasil Pencarian</h2>
+        <p id="hasil-count" aria-live="polite"></p>
+      </div>
+      <div class="results" id="hasil"></div>
+    </div>
+  </main>
+  <footer class="site-footer" id="site-footer"></footer>
+  <noscript><p style="padding:24px;text-align:center">Situs ini memerlukan JavaScript agar dapat menampilkan data destinasi.</p></noscript>
+  <script src="js/data.js"></script>
+  <script src="js/art.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

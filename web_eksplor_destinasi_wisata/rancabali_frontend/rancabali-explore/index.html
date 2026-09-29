@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rancabali Explore | Eksplor Destinasi Wisata Rancabali</title>
+  <meta name="description" content="Temukan keindahan alam tersembunyi, kuliner khas, dan edukasi menarik di kawasan Rancabali, Bandung.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="beranda" data-nav="beranda">
+  <a class="skip" href="#main">Lewati ke konten utama</a>
+  <header class="site-header" id="site-header"></header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-judul">
+      <img class="hero__bg" id="hero-img" alt="" width="900" height="500">
+      <div class="container">
+        <h1 id="hero-judul">Eksplor Destinasi Wisata Rancabali</h1>
+        <p>Temukan keindahan alam tersembunyi, kuliner khas, dan edukasi menarik di kawasan Rancabali Bandung.</p>
+        <form class="searchbar" action="pencarian.html" method="get" role="search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <label class="sr-only" for="q">Cari tujuan liburan</label>
+          <input id="q" name="q" type="search" placeholder="Cari tujuan liburanmu..." autocomplete="off">
+          <button class="btn btn--primary" type="submit">Cari</button>
+        </form>
+      </div>
+    </section>
+
+    <div class="container">
+      <section class="section" id="kategori" aria-labelledby="kategori-judul">
+        <div class="section__head">
+          <h2 id="kategori-judul">Kategori Wisata</h2>
+          <a href="pencarian.html">Lihat Semua &rarr;</a>
+        </div>
+        <ul class="cats" id="kategori-list"></ul>
+      </section>
+
+      <section class="section" id="populer" aria-labelledby="populer-judul">
+        <div class="section__head">
+          <h2 id="populer-judul">Destinasi Populer</h2>
+          <a href="pencarian.html">Lihat Semua &rarr;</a>
+        </div>
+        <div class="cards" id="populer-list"></div>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer" id="site-footer"></footer>
+  <noscript><p style="padding:24px;text-align:center">Situs ini memerlukan JavaScript agar dapat menampilkan data destinasi.</p></noscript>
+  <script src="js/data.js"></script>
+  <script src="js/art.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

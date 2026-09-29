@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daftar Akun | Rancabali Explore</title>
+  <meta name="description" content="Masuk atau daftar akun Rancabali Explore.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="register">
+  <main class="auth" id="main">
+    <div class="auth__wrap">
+      <div class="auth__brand">
+        <a href="index.html" aria-label="Rancabali Explore, ke beranda">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M3 28 8 6l8 12 5-8 8 18Z"/></svg>
+          <strong>RANCABALI EXPLORE</strong>
+        </a>
+        <span>Jelajah Keindahan Alam, Temukan Ceritamu</span>
+      </div>
+      <div class="auth__card">
+        <h1>Daftar Akun</h1>
+        <p>Buat akun untuk mengakses semua fitur Rancabali Explore.</p>
+        <form class="form" id="form-register" novalidate>
+          <div id="status" class="alert" role="status"></div>
+          <div>
+            <div class="field" data-icon="user">
+              <label class="sr-only" for="nama">Nama lengkap</label>
+              <input id="nama" name="nama" type="text" placeholder="Nama Lengkap" autocomplete="name" aria-describedby="nama-err">
+            </div>
+            <p class="field__error" id="nama-err" role="alert"></p>
+          </div>
+          <div>
+            <div class="field" data-icon="mail">
+              <label class="sr-only" for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="Email" autocomplete="email" aria-describedby="email-err">
+            </div>
+            <p class="field__error" id="email-err" role="alert"></p>
+          </div>
+          <div>
+            <div class="field" data-icon="lock">
+              <label class="sr-only" for="pw">Password</label>
+              <input id="pw" name="pw" type="password" placeholder="Password" autocomplete="new-password" aria-describedby="pw-err">
+              <button class="field__toggle" type="button" aria-label="Tampilkan password" aria-pressed="false"></button>
+            </div>
+            <p class="field__error" id="pw-err" role="alert"></p>
+          </div>
+          <div>
+            <div class="field" data-icon="lock">
+              <label class="sr-only" for="pw2">Konfirmasi password</label>
+              <input id="pw2" name="pw2" type="password" placeholder="Konfirmasi Password" autocomplete="new-password" aria-describedby="pw2-err">
+              <button class="field__toggle" type="button" aria-label="Tampilkan password" aria-pressed="false"></button>
+            </div>
+            <p class="field__error" id="pw2-err" role="alert"></p>
+          </div>
+          <p class="form__terms">Dengan mendaftar, Anda menyetujui <button class="link" type="button" id="buka-syarat">Syarat &amp; Ketentuan</button> kami.</p>
+          <button class="btn btn--primary btn--block btn--lg" type="submit">Daftar</button>
+          <p class="form__alt">Sudah punya akun? <a href="login.html">Login di sini</a></p>
+        </form>
+      </div>
+      <dialog id="dlg-syarat" aria-labelledby="syarat-judul">
+        <h2 id="syarat-judul">Syarat &amp; Ketentuan</h2>
+        <p>Ini adalah teks contoh. Ganti dengan syarat dan ketentuan resmi sebelum situs dipublikasikan. Data akun pada versi demo ini hanya disimpan di browser Anda.</p>
+        <button class="btn btn--primary" type="button" id="tutup-syarat">Tutup</button>
+      </dialog>
+    </div>
+    <svg class="auth__deco" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><path d="M3 28 8 6l8 12 5-8 8 18Z"/></svg>
+  </main>
+  <script src="js/data.js"></script>
+  <script src="js/art.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
