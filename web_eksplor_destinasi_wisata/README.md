@@ -17,7 +17,6 @@ informasi mengenai destinasi wisata di Rancabali.
 - Halaman admin
 
 ## Teknologi
-- PHP
 - MySQL
 - HTML
 - CSS
